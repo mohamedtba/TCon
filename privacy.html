@@ -1,34 +1,28 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta charset="UTF-8"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="website icon" type="jpg" href="128.png">
-<title>Privacy Policy - TCon</title> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Privacy Policy - TCon</title>
 <style>
-    /* Reset default styles */
-    * {
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0f1724;
+        color: #ffffff;
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
-        font-family: 'Arial', sans-serif;
-    }
-
-    body {
-        background: linear-gradient(135deg, #e0e7ff, #f0f4f8);
-        color: #333;
-        line-height: 1.6;
         display: flex;
         justify-content: center;
-        padding: 40px 20px;
+        align-items: flex-start;
+        min-height: 100vh;
     }
 
     .container {
         max-width: 800px;
-        background-color: #fff;
-        padding: 30px 40px;
+        padding: 30px;
+        margin: 40px 20px;
+        background-color: #1e293b;
         border-radius: 12px;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.5);
     }
 
     img {
@@ -39,35 +33,52 @@
     }
 
     h1 {
-        font-size: 2rem;
         text-align: center;
+        color: #facc15;
         margin-bottom: 20px;
-        color: #4f46e5;
     }
 
-    p {
-        margin-bottom: 15px;
-        font-size: 1rem;
+    h2 {
+        color: #4f46e5;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    p, code {
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    code {
+        background-color: #0f1724;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: monospace;
+        color: #facc15;
     }
 
     a {
         color: #4f46e5;
         text-decoration: none;
-        font-weight: bold;
     }
 
     a:hover {
         text-decoration: underline;
     }
 </style>
-</head> 
-<body> 
-    <div class="container">
-        <img src="128.png" alt="TCon Logo"> 
-        <h1>Privacy Policy for TCon - Time Controller</h1> 
-        <p>TCon does not collect any personal information from users. The extension only tracks time spent on YouTube locally within the browser to help users manage their time.</p> 
-        <p>No data is sent to external servers. No personal information is collected, shared, or sold.</p> 
-        </div>
-</body> 
-</html>
+</head>
+<body>
+<div class="container">
+    <img src="128.png" alt="TCon Logo"> 
+    <h1>Privacy Policy for TCon</h1>
+    <p>TCon is a Chrome extension that helps users manage their time on YouTube. This extension <strong>does not collect, transmit, or store any personal information</strong> outside the user's browser.</p>
 
+    <h2>Data Storage</h2>
+    <p>The extension uses <code>chrome.storage.local</code> to save timers and states locally on your device. No data is sent to any server.</p>
+
+    <h2>Permissions</h2>
+    <p>The extension requests only the <strong>storage</strong> permission. It does not access your browsing history, cookies, or any sensitive data.</p>
+
+   </div>
+</body>
+</html>
