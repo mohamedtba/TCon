@@ -3,7 +3,8 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="website icon" type="jpg" href="128.png">
+   <link rel="website icon" type="jpg" href="128.png">
+   
     <title>TCon</title>
     <style>
         /* Reset some default styles */
@@ -33,6 +34,7 @@
             width: 128px;
             height: 128px;
             margin-bottom: 15px;
+            
         }
 
         h2 {
@@ -54,14 +56,20 @@
         a:hover {
             color: #d4a017;
         }
+            #imgContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     </style>
 </head> 
 <body> 
     <div> 
-        <img src="128.png" alt="TCon Logo"> 
+         <div id="imgContainer">
+        <img src="128.png" alt=""> 
+        <img src="1288.png" alt="">
+    </div>   
         <h2>TCon</h2> 
     </div> 
     <p><a href="privacy.html">Privacy Policy</a></p> 
 </body> 
 </html>
-
